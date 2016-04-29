@@ -137,7 +137,7 @@ body{
 }
 .mid-grid-center{
 	float: center;
-	width: 50%;
+	width: 41%;
 	padding-top: 0em;
 	padding-left: 1em;
 	padding-right: 0em;
@@ -152,17 +152,17 @@ body{
 	width:25%;
 }
 .mid-grid-center input[type="text"]{
-	border: 1px solid #08080B;
+	border: 1px solid #A5A5A5;
 	border-right: none;
 	border-left: none;
 	border-top: none;
 	font-family: 'Open Sans', sans-serif;
 	outline: none;
 	padding: 1em 0.8em 1em 10em;
-	background-image: url("../images/searchicon.png");
+	background-image: url("../images/searchicon1.png");
 	background-repeat: no-repeat;
 	background-size: 1.85em;
-	background-position: left 2em bottom 0em;
+	background-position: left bottom 0em;
 	color:#A5A5A5;
 	width:68%;
 	text-align: justify;
