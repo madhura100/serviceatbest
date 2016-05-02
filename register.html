@@ -10,6 +10,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<title>Spike shoes Website Template | REGISTER :: w3layouts</title>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="google-signin-client_id" content="743131590159-c0dmn25t8v7619d2u1ib34rd02556mg4.apps.googleusercontent.com">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----webfonts---->
@@ -24,6 +25,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$('.vticker').easyTicker();
 		});
 		</script>
+		<!--Google Auth Login-->
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
 		<!----start-alert-scroller---->
 		<!-- start menu -->
 		<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
@@ -45,39 +48,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---//move-top-top---->
 	</head>
 	<body>
+		<!---FB LoginScript Code--->
+		 <div id="fb-root"></div>
+			<script>
+ 				  $(window).bind("load", function() {
+       $.getScript('js/loginsocial.js', function() {});
+    });
+  </script>
+		
+		<!--End FB Button Script>
 		<!---start-wrap---->
 			<!---start-header---->
+			
 			<div class="header">
 				<div class="top-header">
 					<div class="wrap">
 						<div class="top-header-left">
-							<ul>
-								<!---cart-tonggle-script---->
-								<script type="text/javascript">
-									$(function(){
-									    var $cart = $('#cart');
-									        $('#clickme').click(function(e) {
-									         e.stopPropagation();
-									       if ($cart.is(":hidden")) {
-									           $cart.slideDown("slow");
-									       } else {
-									           $cart.slideUp("slow");
-									       }
-									    });
-									    $(document.body).click(function () {
-									       if ($cart.not(":hidden")) {
-									           $cart.slideUp("slow");
-									       } 
-									    });
-									    });
-								</script>
-								<!---//cart-tonggle-script---->
-								<li><a class="cart" href="#"><span id="clickme"> </span></a></li>
-								<!---start-cart-bag---->
-								<div id="cart">Your Cart is Empty <span>(0)</span></div>
-								<!---start-cart-bag---->
-								<li><a class="info" href="#"><span> </span></a></li>
-							</ul>
 						</div>
 						<div class="top-header-center">
 							<div class="top-header-center-alert-left">
@@ -103,15 +89,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<!----start-mid-head---->
 				<div class="mid-header">
-					<div class="wrap">
-						<div class="mid-grid-left">
-							<form>
-								<input type="text" placeholder="What Are You Looking for?" />
-							</form>
-						</div>
+					
 						<div class="mid-grid-right">
 							<a class="logo" href="index.html"><span> </span></a>
 						</div>
+						<div class="mid-grid-center">
+							<form>
+								<input type="text" placeholder="Search for a service"/>
+							</form>
+						</div>
+						<div class="wrap">
 						<div class="clear"> </div>
 					</div>
 				</div>
@@ -528,47 +515,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="login-main">
 				<div class="wrap">
 					<h1>CREATE AN ACCOUNT</h1>
-					<div class="register-grids">
-						<form> 
-								<div class="register-top-grid">
-										<h3>PERSONAL INFORMATION</h3>
+						<div class="login-left">
+							<div class="register-grids">
+								<form> 
+									<div class="register-top-grid">
 										<div>
-											<span>First Name<label>*</label></span>
+											<span>Email Address/Mobile Number<label>*</label></span>
 											<input type="text"> 
 										</div>
-										<div>
-											<span>Last Name<label>*</label></span>
-											<input type="text"> 
-										</div>
-										<div>
-											<span>Email Address<label>*</label></span>
-											<input type="text"> 
-										</div>
-										<div class="clear"> </div>
-											<a class="news-letter" href="#">
-												<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
-											</a>
-										<div class="clear"> </div>
-								</div>
-								<div class="clear"> </div>
-								<div class="register-bottom-grid">
-										<h3>LOGIN INFORMATION</h3>
+										<div class="clear"> </div>		
+									</div>
+									<div class="clear"> </div>
+									<div class="register-bottom-grid">
 										<div>
 											<span>Password<label>*</label></span>
 											<input type="text">
 										</div>
-										<div>
-											<span>Confirm Password<label>*</label></span>
-											<input type="text">
-										</div>
 										<div class="clear"> </div>
-								</div>
-								<div class="clear"> </div>
-								<input type="submit" value="submit" />
-						</form>
+									</div>
+									<div class="clear"> </div>
+									<div class="register-bottom-grid">
+										<input type="submit" value="Register" />
+									</div>
+									<div class="clear"></div>
+								</form>
+							</div>
+						</div>
+						<div class ="login-right">
+							<button class ="fbIcon" onclick="fb_login();">Login with Facebook</button>
+							<div class="g-signin2" data-onsuccess="onSignIn"></div>
+							<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" size="large">Login with Facebook</fb:login-button>
+<div id="status">
+</div>-->
+
+
+							</div>
 					</div>
 				</div>
-			</div>
 		</div>
 		<!---- start-bottom-grids---->
 		<div class="bottom-grids">
@@ -658,6 +641,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="clear"> </div>
 			</div>
 		</div>
+		
+
 		<!---//End-footer---->
 		<!---//End-wrap---->
 	</body>

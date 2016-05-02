@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///Users/madhura/Documents/serviceatbest/register.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Spike shoes Website Template | REGISTER :: w3layouts</title>
+		<link href="./Spike shoes Website Template _ REGISTER __ w3layouts_files/style.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script id="facebook-jssdk" src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/sdk.js"></script><script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
+		<!----webfonts---->
+		<link href="./Spike shoes Website Template _ REGISTER __ w3layouts_files/css" rel="stylesheet" type="text/css">
+		<!----//webfonts---->
+		<script src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/jquery.min.js"></script>
+		<!----start-alert-scroller---->
+		<script type="text/javascript" src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/jquery.easy-ticker.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('#demo').hide();
+			$('.vticker').easyTicker();
+		});
+		</script>
+		<!----start-alert-scroller---->
+		<!-- start menu -->
+		<link href="./Spike shoes Website Template _ REGISTER __ w3layouts_files/megamenu.css" rel="stylesheet" type="text/css" media="all">
+		<script type="text/javascript" src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/megamenu.js"></script>
+		<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+		<script src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/menu_jquery.js"></script>
+		<!-- //End menu -->
+		<!---move-top-top---->
+		<script type="text/javascript" src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/move-top.js"></script>
+		<script type="text/javascript" src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<!---//move-top-top---->
+	</head>
+	<body data-focus="1" style="">
+		<!---FB LoginScript Code--->
+		<script>
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+		document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '{your-app-id}',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.5' // use graph api version 2.5
+  });
+FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+
+  };
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1737089926536784";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+  </script>
+		
+		<!--End FB Button Script>
+		<!---start-wrap---->
+			<!---start-header---->
+			<div class="header">
+				<div class="top-header">
+					<div class="wrap">
+						<div class="top-header-left">
+						</div>
+						<div class="top-header-center">
+							<div class="top-header-center-alert-left">
+								<h3>FREE DELIVERY</h3>
+							</div>
+							<div class="top-header-center-alert-right">
+								<div class="vticker" style="display: block; position: relative; height: 18px; overflow: hidden;">
+								  <ul style="position: absolute; margin: 0px; top: 0px;">
+									  
+								  <li style="margin: 0px; display: list-item;">Applies to orders of $50 or more. <label style="margin: 0px;">Returns are always free.</label></li></ul>
+								</div>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<div class="top-header-right">
+							<ul>
+								<li><a href="file:///Users/madhura/Documents/serviceatbest/login.html">Login</a><span> </span></li>
+								<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html">Join</a></li>
+							</ul>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!----start-mid-head---->
+				<div class="mid-header">
+					
+						<div class="mid-grid-right">
+							<a class="logo" href="file:///Users/madhura/Documents/serviceatbest/index.html"><span> </span></a>
+						</div>
+						<div class="mid-grid-center">
+							<form>
+								<input type="text" placeholder="Search for a service">
+							</form>
+						</div>
+						<div class="wrap">
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<!----//End-mid-head---->
+				<!----start-bottom-header---->
+				<div class="header-bottom">
+					<div class="wrap">
+					<!-- start header menu -->
+							<ul class="megamenu skyblue"><li class="showhide" style="display: none;"><span class="title">MENU</span><span class="icon1"></span><span class="icon2"></span></li>
+								<li class="grid" style="display: inline-block;"><a class="color2" href="file:///Users/madhura/Documents/serviceatbest/register.html#">MEN</a>
+									<div class="megapanel">
+										<div class="row">
+											<div class="col1">
+												<div class="h_nav">
+													<h4>popular</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">login</a></li>
+													</ul>	
+												</div>
+												<div class="h_nav">
+													<h4 class="top">man</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">style videos</a></li>
+													</ul>	
+												</div>
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>style zone</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>style zone</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1 men">
+												<div class="men-pic">
+													<img src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/men.png" title="">
+												</div>
+											</div>
+										</div>
+									</div>
+									</li>
+					  			<li class="active grid" style="display: inline-block;"><a class="color4" href="file:///Users/madhura/Documents/serviceatbest/register.html#">women</a>
+									<div class="megapanel">
+										<div class="row">
+											<div class="col1">
+												<div class="h_nav">
+													<h4>shop</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>	
+												<div class="h_nav">
+													<h4>help</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>my company</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>												
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>account</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">login</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">create an account</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">create wishlist</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">my shopping bag</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">create wishlist</a></li>
+													</ul>	
+												</div>						
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>my company</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>popular</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>
+											</div>
+											<div class="col1 women">
+												<div class="women-pic">
+													<img src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/women.png" title="">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col2"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+										</div>
+					    				</div>
+									</li>				
+									<li style="display: inline-block;"><a class="color5" href="file:///Users/madhura/Documents/serviceatbest/register.html#">KIDS</a>
+									<div class="megapanel">
+										<div class="row">
+											<div class="col1">
+												<div class="h_nav">
+													<h4>popular</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">login</a></li>
+													</ul>	
+												</div>
+												<div class="h_nav">
+													<h4 class="top">man</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>style zone</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1 kids">
+												<div class="kids-pic">
+													<img src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/kids1.png" title="">
+												</div>
+											</div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+										</div>
+									</div>
+									</li>
+									<li style="display: inline-block;"><a class="color6" href="file:///Users/madhura/Documents/serviceatbest/register.html#">SPORTS</a>
+									<div class="megapanel">
+										<div class="row">
+											<div class="col1">
+												<div class="h_nav">
+													<h4>shop</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>	
+												<div class="h_nav">
+													<h4 class="top">my company</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>												
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>man</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>						
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>help</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1 sports">
+												<div class="sports-pic">
+													<img src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/sport.png" title="">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col2"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+										</div>
+									</div>
+									</li>
+									<li style="display: inline-block;"><a class="color7" href="file:///Users/madhura/Documents/serviceatbest/register.html#">NIKE SPORTSWEAR</a>
+									<div class="megapanel">
+										<div class="row">
+											<div class="col1">
+												<div class="h_nav">
+													<h4>shop</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>		
+												<div class="h_nav">
+													<h4>my company</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>					
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>help</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>my company</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">trends</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">sale</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>												
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>account</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">login</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">create an account</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">create wishlist</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">my shopping bag</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">create wishlist</a></li>
+													</ul>	
+												</div>						
+											</div>
+											<div class="col1 nike">
+												<div class="nike-pic">
+													<img src="./Spike shoes Website Template _ REGISTER __ w3layouts_files/nike.png" title="">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col2"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+										</div>
+					    				</div>
+									</li>
+									<li style="display: inline-block;"><a class="color8" href="file:///Users/madhura/Documents/serviceatbest/register.html#">NIKEiD</a>
+									<div class="megapanel">
+										<div class="row">
+											<div class="col1">
+												<div class="h_nav">
+													<h4>style zone</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">women</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">brands</a></li>
+													</ul>	
+												</div>							
+											</div>
+											<div class="col1">
+												<div class="h_nav">
+													<h4>popular</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">men</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">login</a></li>
+													</ul>	
+												</div>
+												<div class="h_nav">
+													<h4 class="top">man</h4>
+													<ul>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">new arrivals</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">accessories</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">kids</a></li>
+														<li><a href="file:///Users/madhura/Documents/serviceatbest/products.html">style videos</a></li>
+													</ul>	
+												</div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+											<div class="col1"></div>
+										</div>
+									</div>
+									</div></li>
+							</ul>
+
+					</div>
+				</div>
+				</div>
+				<!----//End-bottom-header---->
+			<!---//End-header---->
+		<!--- start-content---->
+		<div class="content login-box">
+			<div class="login-main">
+				<div class="wrap">
+					<h1>CREATE AN ACCOUNT</h1>
+						<div class="login-left">
+							<div class="register-grids">
+								<form> 
+									<div class="register-top-grid">
+										<div>
+											<span>Email Address/Mobile Number<label>*</label></span>
+											<input type="text"> 
+										</div>
+										<div class="clear"> </div>		
+									</div>
+									<div class="clear"> </div>
+									<div class="register-bottom-grid">
+										<div>
+											<span>Password<label>*</label></span>
+											<input type="text">
+										</div>
+										<div class="clear"> </div>
+									</div>
+									<div class="clear"> </div>
+									<div class="register-bottom-grid">
+										<input type="submit" value="Register">
+									</div>
+									<div class="clear"></div>
+								</form>
+							</div>
+						</div>
+						<div class="login-right">
+							<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+
+<div id="status">
+</div>
+							</div>
+					</div>
+				</div>
+		</div>
+		<!---- start-bottom-grids---->
+		<div class="bottom-grids">
+			<div class="bottom-top-grids">
+				<div class="wrap">
+					<div class="bottom-top-grid">
+						<h4>GET HELP</h4>
+						<ul>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/contact.html">Contact us</a></li>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Shopping</a></li>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">NIKEiD</a></li>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Nike+</a></li>
+						</ul>
+					</div>
+					<div class="bottom-top-grid">
+						<h4>ORDERS</h4>
+						<ul>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Payment options</a></li>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Shipping and delivery</a></li>
+							<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Returns</a></li>
+						</ul>
+					</div>
+					<div class="bottom-top-grid last-bottom-top-grid">
+						<h4>REGISTER</h4>
+						<p>Create one account to manage everything you do with Nike, from your shopping preferences to your Nike+ activity.</p>
+						<a class="learn-more" href="file:///Users/madhura/Documents/serviceatbest/register.html#">Learn more</a>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="bottom-bottom-grids">
+				<div class="wrap">
+					<div class="bottom-bottom-grid">
+						<h6>EMAIL SIGN UP</h6>
+						<p>Be the first to know about new products and special offers.</p>
+						<a class="learn-more" href="file:///Users/madhura/Documents/serviceatbest/register.html#">Sign up now</a>
+					</div>
+					<div class="bottom-bottom-grid">
+						<h6>GIFT CARDS</h6>
+						<p>Give the gift that always fits.</p>
+						<a class="learn-more" href="file:///Users/madhura/Documents/serviceatbest/register.html#">View cards</a>
+					</div>
+					<div class="bottom-bottom-grid last-bottom-bottom-grid">
+						<h6>STORES NEAR YOU</h6>
+						<p>Locate a Nike retail store or authorized retailer.</p>
+						<a class="learn-more" href="file:///Users/madhura/Documents/serviceatbest/register.html#">Search</a>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+		<!---- //End-bottom-grids---->
+		<!--- //End-content---->
+		<!---start-footer---->
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer-left">
+					<ul>
+						<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">United Kingdom</a> <span> </span></li>
+						<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Terms of Use</a> <span> </span></li>
+						<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Nike Inc.</a> <span> </span></li>
+						<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Launch Calendar</a> <span> </span></li>
+						<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Privacy &amp; Cookie Policy</a> <span> </span></li>
+						<li><a href="file:///Users/madhura/Documents/serviceatbest/register.html#">Cookie Settings</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<p>Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+			    <a href="file:///Users/madhura/Documents/serviceatbest/register.html#" id="toTop" style="display: none;"><span id="toTopHover"></span><span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!---//End-footer---->
+		<!---//End-wrap---->
+	
+
+
+<a href="file:///Users/madhura/Documents/serviceatbest/register.html#" id="toTop">To Top</a></body></html>
