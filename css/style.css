@@ -31,16 +31,32 @@ body{
 	margin:0 auto;
 }
 .top-header{
-	background:Black;
+	background:#051D4E;
 }
 .top-header-left{
 	float:left;
-	width:10%;
+	width:14;
 	padding: 0.25em 0 0 0;
 }
+.top-header-left-left{
+	float:left;
+	width=5%;
+	
+}
+.top-header-left-right{
+	float:right;
+	width=95%;
+	
+}
+
+.top-header-center-alert-right{
+	float: right;
+	width: 60%;
+}
+
 .top-header-center{
 	float: left;
-	width: 80%;
+	width: 76%;
 	padding: 0.25em;
 	padding: 0.4em;
 }
@@ -52,7 +68,7 @@ body{
 	display:inline-block;
 }
 .top-header-left ul li a span{
-	width:24px;
+	width:48px;
 	height:24px;
 	display:block;
 }
@@ -198,6 +214,18 @@ body{
 :-ms-input-placeholder {  
    color: black;  
 }
+
+.location  span{
+	width: 1.5em;
+	height: 1.6em;
+	 display: inline-block;
+	background: url(../images/location4.png) no-repeat -0px -0px;
+	/** background-size: 14em **/
+	margin: auto;
+	
+}
+
+
 .logo span{
 	width: 230px;
 	height: 30px;
