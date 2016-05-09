@@ -14,7 +14,7 @@ function statusChangeCallback(response) {
    						 }
   				}
  				 function checkLoginState() {
-    					FB.getLoginStatus(function(response) {
+    					FB.getLoginStatus(function(response) {	
      					statusChangeCallback(response);
    				});
  				}
@@ -55,13 +55,13 @@ function statusChangeCallback(response) {
         scope: 'user_location,email,user_likes,user_birthday'
     });
 }
-				(function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0];
-				if (d.getElementById(id)) return;
-				js = d.createElement(s); js.id = id;
-				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1737089926536784";
-				fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
+					(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1737089926536784";
+					fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
 				
 				function testAPI() {
 					console.log('Welcome!  Fetching your information.... ');
@@ -71,3 +71,32 @@ function statusChangeCallback(response) {
 						'Thanks for logging in, ' + response.name + '!';
 					});
 				}
+				
+				
+			//Google Stuff
+			
+  var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '743131590159-c0dmn25t8v7619d2u1ib34rd02556mg4.apps.googleusercontent.com',
+        
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('googleIcon'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+          document.getElementById('name').innerText = "Signed in: " +
+              googleUser.getBasicProfile().getName();
+        }, function(error) {
+          alert(JSON.stringify(error, undefined, 2));
+        });
+  }
+ 

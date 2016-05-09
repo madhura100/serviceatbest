@@ -9,6 +9,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<head>
 		<title>Spike shoes Website Template | REGISTER :: w3layouts</title>
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+		<!--Custom Google Login-->
+ 		<script src="https://apis.google.com/js/api:client.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google-signin-client_id" content="743131590159-c0dmn25t8v7619d2u1ib34rd02556mg4.apps.googleusercontent.com">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -25,8 +28,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$('.vticker').easyTicker();
 		});
 		</script>
-		<!--Google Auth Login-->
-		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		<script>
+				 
+       $.getScript('js/loginsocial-google.js', function() {});
+    
+	    </script>
 		<!----start-alert-scroller---->
 		<!-- start menu -->
 		<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
@@ -54,10 +60,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
  				  $(window).bind("load", function() {
        $.getScript('js/loginsocial.js', function() {});
     });
-  </script>
+  		   </script>
+	    <!--End FB Button Script>
 		
-		<!--End FB Button Script>
+		<!--Begin Google Button Script>-->
+		 
+		 <div id="my-signin2"></div>
+		 	<script>
+				 $(window).bind("load", function() {
+       $.getScript('js/loginsocial.js', function() {});
+    });
+			</script>
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<!--End Google Button Script-->
 		<!---start-wrap---->
+			
 			<!---start-header---->
 			
 			<div class="header">
@@ -522,8 +539,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div>
 											<span>Email Address/Mobile Number<label>*</label></span>
 											<input type="text"> 
-										</div>
-										<div class="clear"> </div>		
+											<div class="clear"></div>
+										</div>		
 									</div>
 									<div class="clear"> </div>
 									<div class="register-bottom-grid">
@@ -535,21 +552,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</div>
 									<div class="clear"> </div>
 									<div class="register-bottom-grid">
+										<div>
 										<input type="submit" value="Register" />
+									</div>
 									</div>
 									<div class="clear"></div>
 								</form>
 							</div>
 						</div>
-						<div class ="login-right">
+						<div class ="login-center">
 							<button class ="fbIcon" onclick="fb_login();">Login with Facebook</button>
-							<div class="g-signin2" data-onsuccess="onSignIn"></div>
+							<div id="gSignInWrapper">
+								<div class="orSeparator">OR</div>
+    							<button id="googleIcon" class="customGPlusSignIn">
+									Sign in with Google
+  							</div>
+							  
+							  <script>startApp();</script>
 							<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" size="large">Login with Facebook</fb:login-button>
 <div id="status">
 </div>-->
 
 
 							</div>
+							<div class="login-right"></div>
 					</div>
 				</div>
 		</div>
