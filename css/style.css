@@ -80,6 +80,9 @@ body{
 	height:24px;
 	display:block;
 }
+.hidden{
+	display:none;
+}
 /*----start-cart-tonggle----*/
 .cart{
 	position:relative;
@@ -1081,9 +1084,9 @@ h2.resp-accordion:first-child {
 }
 .orSeparator
 {
-	padding-bottom: 1.1em;
+	padding-bottom: 1.3em;
+	padding-top:1.3em;
 	text-align: center;
-	width: inherit;
 	font-family:  sans-serif;
 	
 }
@@ -1118,7 +1121,7 @@ h2.resp-accordion:first-child {
 	text-align: end;
 }
 #gSignInWrapper{
-	padding-top: 25px;
+	
 }
 #googleIcon {
       display: inline-block;

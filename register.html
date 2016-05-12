@@ -11,9 +11,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<link href="css/style.css" rel='stylesheet' type='text/css' />
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 		<!--Custom Google Login-->
- 		<script src="https://apis.google.com/js/api:client.js"></script>
+		
+ 		<script src="https://apis.google.com/js/client.js" gapi_processed="true"></script>
+		 <script src="js/loginsocial-google.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="google-signin-client_id" content="743131590159-c0dmn25t8v7619d2u1ib34rd02556mg4.apps.googleusercontent.com">
+		
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</script>
 		<!----webfonts---->
@@ -30,7 +32,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</script>
 		<script>
 				 
-       $.getScript('js/loginsocial-google.js', function() {});
+      
     
 	    </script>
 		<!----start-alert-scroller---->
@@ -43,6 +45,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---move-top-top---->
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
+		<!---FB&Google LoginScript Code--->
+		
+		<script>
+       			$.getScript('js/loginsocial.js', function() {console.log("loaded social script")});
+	   </script>
+		 <!--End Script-->
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -54,25 +62,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---//move-top-top---->
 	</head>
 	<body>
-		<!---FB LoginScript Code--->
-		 <div id="fb-root"></div>
-			<script>
- 				  $(window).bind("load", function() {
-       $.getScript('js/loginsocial.js', function() {});
-    });
-  		   </script>
-	    <!--End FB Button Script>
 		
-		<!--Begin Google Button Script>-->
-		 
-		 <div id="my-signin2"></div>
-		 	<script>
-				 $(window).bind("load", function() {
-       $.getScript('js/loginsocial.js', function() {});
-    });
-			</script>
-		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
-		<!--End Google Button Script-->
 		<!---start-wrap---->
 			
 			<!---start-header---->
@@ -562,13 +552,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div class ="login-center">
 							<button class ="fbIcon" onclick="fb_login();">Login with Facebook</button>
+							<div class="orSeparator">OR</div>
 							<div id="gSignInWrapper">
-								<div class="orSeparator">OR</div>
+								
     							<button id="googleIcon" class="customGPlusSignIn">
 									Sign in with Google
+								 
+
+    							</button>
   							</div>
 							  
-							  <script>startApp();</script>
 							<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();" size="large">Login with Facebook</fb:login-button>
 <div id="status">
 </div>-->
@@ -667,10 +660,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="clear"> </div>
 			</div>
 		</div>
-		
+		<div id="name"></div>
+		<script>startApp();</script>
 
 		<!---//End-footer---->
 		<!---//End-wrap---->
+		
 	</body>
 </html>
 

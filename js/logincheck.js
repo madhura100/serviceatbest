@@ -1,11 +1,11 @@
 //DoM change for login
-
+var userLoggedIn="false";
 
 function toggleDomLogin(loginstatus){
 	if(loginstatus="true")
 	{
 
-		var table = document.getElementsByClassName("logged-in-user")[0];
+		var table = document.getElementById("new-user");
 		//console.log(table);
 		table.parentNode.removeChild(table);
 		var logindiv=document.getElementsByClassName("top-header-right")[0];
@@ -60,9 +60,10 @@ function statusChangeCallback(response) {
       					// The person is logged into Facebook, but not your app.
       						document.getElementById('status').innerHTML = 'Please log ' +	
        							 'into this app.';
+									document.getElementById("new-user").className="";
     					} else {
-							document.getElementById('status').innerHTML = 'Please log ' +
-        					'into Facebook.';
+							
+							document.getElementById("new-user").className="";
    						 }
   				}
 				  
@@ -119,16 +120,20 @@ console.log("running checkcookie");
         // do cookie doesn't exist stuff;
 		//check facebook connection
 	
-		
+		try{
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
-  
-}
+		}
+		catch(err){
+			console.log(err);
+		}
+	}
 }
 
 
-//checkCookie();
+
+checkCookie();
 
 
 //Set cookie
@@ -149,6 +154,56 @@ function setUserCookie(userid, username)
 
 				
 //Google login check
+
+function googleLoginCheck(){
+	
+	 gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+     auth2= gapi.auth2.init({
+        client_id: '743131590159-c0dmn25t8v7619d2u1ib34rd02556mg4.apps.googleusercontent.com',
+				fetch_basic_profile: true
+       
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+	   console.log(auth2);
+	   //var auth3=gapi.auth2.GoogleAuth();
+	   console.log(auth2.isSignedIn.get());
+	   if (auth2.isSignedIn.get()) {
+		var profile = auth2.currentUser.get().getBasicProfile();
+		console.log('ID: ' + profile.getId());
+		console.log('Full Name: ' + profile.getName());
+		console.log('Given Name: ' + profile.getGivenName());
+		console.log('Family Name: ' + profile.getFamilyName());
+		console.log('Image URL: ' + profile.getImageUrl());
+		console.log('Email: ' + profile.getEmail());
+		}
+	
+	
+	/*if (auth3.isSignedIn.get()) {
+		var profile = auth2.currentUser.get().getBasicProfile();
+		console.log('ID: ' + profile.getId());
+		console.log('Full Name: ' + profile.getName());
+		console.log('Given Name: ' + profile.getGivenName());
+		console.log('Family Name: ' + profile.getFamilyName());
+		console.log('Image URL: ' + profile.getImageUrl());
+		console.log('Email: ' + profile.getEmail());
+		}
+*/
+});
+}
+
+googleLoginCheck();
+
+
+
+
+
+
+
+	  
+
+
 
 
                    
